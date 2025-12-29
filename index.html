@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新竹縣氣候變遷政策展示</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { 
+            font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft JhengHei", sans-serif; 
+            /* 【修改位置】網頁背景底色 (目前為淺湖水綠) */
+            background-color: #f0f7f6; 
+            padding: 40px 20px; 
+            line-height: 1.8; 
+            color: #2c3e50; 
+            margin: 0;
+        }
+
+        .container { 
+            /* 【修改位置】網頁介面總寬度 (數字越大越寬，1200px 為寬版，1400px 為極寬版) */
+            max-width: 1200px; 
+            margin: auto; 
+        }
+
+        h1 { 
+            /* 【修改位置】大標題文字顏色 (目前為深綠色) */
+            color: #004d40; 
+            text-align: center; 
+            /* 【修改位置】大標題字體大小 */
+            font-size: 2.4rem;
+            margin-bottom: 20px; 
+            font-weight: bold;
+        }
+
+        .header-underline {
+            width: 100%;
+            /* 【修改位置】大標題下方的橫線：厚度(3px)、顏色(#26a69a) */
+            border-bottom: 3px solid #26a69a; 
+            margin-bottom: 40px;
+        }
+
+        .card { 
+            /* 【修改位置】卡片容器底色 (目前為純白) */
+            background: #ffffff; 
+            /* 【修改位置】邊框圓角程度 */
+            border-radius: 8px; 
+            padding: 40px; 
+            /* 【修改位置】卡片陰影的深淺 */
+            box-shadow: 0 4px 20px rgba(0, 77, 64, 0.08); 
+            /* 【修改位置】卡片邊框的顏色 */
+            border: 1px solid #d1e4e2;
+            position: relative; 
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            flex-wrap: wrap; 
+        }
+
+        .link-title { 
+            /* 【修改位置】小標題文字顏色 */
+            color: #006064; 
+            font-weight: 800; 
+            font-size: 1.6em; 
+            /* 【修改位置】標題左側的小色塊線：寬度(8px)、顏色(#26a69a) */
+            border-left: 8px solid #26a69a;
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+
+        .source-tag {
+            /* 【修改位置】右上角資料來源的背景色 (目前為粉紅色) */
+            background-color: #E0FAF8; 
+            padding: 6px 14px;
+            border-radius: 4px;
+            /* 【修改位置】資料來源文字大小 */
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+
+        .source-tag a {
+            /* 【修改位置】資料來源文字顏色 (目前為黑色) */
+            color: #000000; 
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .source-tag a:hover {
+            /* 【修改位置】當滑鼠移到資料來源連結上時的顏色 */
+            color: #d81b60;
+            text-decoration: underline;
+        }
+
+        /* 簡報嵌入容器設定 */
+        .iframe-container {
+            width: 100%;
+            /* 【修改位置】簡報視窗顯示的高度 (若簡報內容被切掉，可以調高此數值) */
+            height: 750px; 
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* 手機版排版微調 */
+        @media (max-width: 768px) {
+            .iframe-container { height: 450px; }
+            h1 { font-size: 1.8rem; }
+            .card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>新竹縣氣候變遷政策</h1>
+        <div class="header-underline"></div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="link-title">新竹縣氣候變遷政策簡介</span>
+                
+                <div class="source-tag">
+                    資料來源 <i class="fas fa-external-link-alt"></i>：
+                    <a href="https://drive.google.com/file/d/1lVH8JmPICrafENUt6V51Ku9crurEXFPw/view?usp=drive_link" target="_blank">
+                        《新竹縣氣候變遷調適執行方案（核定本）》
+                    </a>
+                </div>
+            </div>
+            
+            <div class="iframe-container">
+                <iframe src="https://drive.google.com/file/d/1ZQ__UIwlJe0XUqIcZUtohSRcrHJtXWF6/preview" allow="autoplay"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
